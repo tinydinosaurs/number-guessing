@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600|Source+Sans+Pro:400,900);
+
+/* color variables */
+$main_background: Snow;
+$box1_color: Crimson;
+$box2_color: DarkOrange;
+$box3_color: Gold;
+$box4_color: SpringGreen;
+$box5_color: RoyalBlue;
+$box6_color: Indigo;
+$box7_color: DarkViolet;
+
+
+
+body {
+	font-family: 'Source Code Pro';
+	color: #282828;
+	background-color: $main_background;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Source Sans Pro';
+	font-size: 1.75em;
+}
+
+.first_box {
+	background-color: $box1_color;
+	margin: 0;
+	padding: 1em;
+}
+.second_box {
+	@extend .first_box;
+	background-color: $box2_color;
+
+}
+.third_box {
+	@extend .first_box;
+	background-color: $box3_color;
+}
+
+.fourth_box {
+	@extend .first_box;
+	background-color: $box4_color;
+}
+
+.fifth_box {
+	@extend .first_box;
+	background-color: $box5_color;
+}
+
+.sixth_box {
+	@extend .first_box;
+	background-color: $box6_color;
+}
+
+.seventh_box {
+	@extend .first_box;
+	background-color: $box7_color;
+}
+
+#app {
+	background-color: $main_background;
+	margin: 0 auto;
+	padding: 2em;
+
+	h1 {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+@media all and (min-width: 550px) {
+
+	h1 {font-size: 2.25em;}
+
+	.first_box {
+		margin: 0;
+		padding: 1.5em;
+	}
+
+	#app {
+		margin: 0 auto;
+		padding: 2em;
+
+		h1 {
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+}
+
+
+@media all and (min-width: 767px) {
+
+	h1 {font-size: 3em;}
+
+	.first_box {
+		margin: 0;
+		padding: 2em;
+	}
+
+	#app {
+		margin: 0 auto;
+		padding: 2em;
+
+		h1 {
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+}

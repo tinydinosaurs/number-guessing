@@ -41,10 +41,11 @@ submitBtnEl.value = "Start";
 // =============================================================================
 
 function guessingGame(userInput) {
+  console.log(typeof userInput); // for guidance. remove when function is complete.
   if (!userInput) {
     number = generateNumber();
     submitBtnEl.value = "Submit";
-    console.log(number) // to cheat, open your console.
+    console.log(number) // for guidance. remove when function is complete.
     msgDisplayEl.innerHTML = "Please guess a number between 1 and 100."
   } else if(userInput > number) {
     msgDisplayEl.innerHTML = "Try guessing lower."
